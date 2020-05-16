@@ -1,0 +1,38 @@
+.row {
+    display: flex;
+    flex-direction: column;
+
+    &--b-margin-medium {
+        margin-bottom: 1rem;       
+    }
+    @mixin atMedium {
+        flex-direction: row;
+
+        &--b-margin-medium {
+            margin-bottom: 0;
+        }
+        &__medium-4 {
+            width:33.33%;
+
+            &--larger {
+                width: 37%;
+            }
+        }
+        &__medium-8 {
+            width: 66.66%;
+
+            &--smaller {
+                width:63%;
+            }
+        }
+        &--gutter > div {
+            padding-right: 56px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    &--align-center {
+        align-items: center;
+    }
+}
