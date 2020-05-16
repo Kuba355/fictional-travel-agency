@@ -46,4 +46,12 @@
     &--align-center {
         align-items: center;
     }
+    /* Begin equal height rules*/
+    @mixin atMedium {
+        &--equal-height > div {
+            display: flex;
+
+        }
+    }
+
 }
